@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />  
+    <title>My app productos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <link rel="stylesheet" type="text/css" href="/format.css" />
+  </head>
+<body>
+    <table>
+      <tr>
+        <th>Producto</th>
+        <th>Precio</th>
+        <th>Imagen</th>
+      </tr>
+      <% for (var i=0; i < productos.length; i++) { %>
+        <tr>
+          <td>
+            <%= productos[i].title %>
+          </td>
+          <td>
+            <%= productos[i].price %>
+          </td>
+          <td>
+            <img src=<%= productos[i].thumbnail %> width=50 heigth=50 />
+          </td>
+        </tr>
+        <% }; %>
+    </table>
+  
+  </body>
+  
+  </html>
+
+
+
